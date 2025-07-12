@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Details</title>
+    <link rel="stylesheet" href="../style/technical_details.css"/>
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <script src="../js/load_navbar.js"></script>
+    <header>
+      <div class="logo">Singlesource Electronics</div>
+      <ul class="nav-links">
+        <li><a href="./home.html" class="active">Home</a></li>
+        <li><a href="./product&services.html">Products & Services</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+
+    <div class="main-box">
+      <h1>Component Engineering</h1>
+      <div class="box-row">
+        <div class="content-box">
+          <img src="../images/img1.png" alt="img1" class="images" />
+          <h3>BOM Analysis / Risk assessment</h3>
+          <ul>
+            <li>Pricing</li>
+            <li>Leadtime</li>
+            <li>MOQ/SPQ</li>
+            <li>Grade</li>
+            <li>Environmental compliance (ROHS/WEEE)</li>
+            <li>Material Declaration</li>
+            <li>Lead Finish</li>
+            <li>Soldering profile</li>
+            <li>End of life</li>
+            <li>Thermal</li>
+          </ul>
+        </div>
+        <div class="content-box">
+          <img src="../../images/img2.png" alt="img2" class="images" />
+          <h3>Alternate Part Selection</h3>
+          <ul>
+            <li>Qualification of Alternate Components</li>
+            <li>Critical tests</li>
+            <li>Electrical test</li>
+            <li>Burn-in Test</li>
+            <li>Environmental Test</li>
+            <li>ECN management</li>
+            <li>Root cause failure analysis</li>
+            <li>Support on Reliability, Thermal and Packaging information</li>
+          </ul>
+        </div>
+      </div>
+      <div class="centered-box">
+        <div class="content-box">
+          <img src="../images/img3.png" alt="img3" class="images" />
+          <h3>Component Library Management</h3>
+          <ul>
+            <li>Component Reuse</li>
+            <li>Cost benefit</li>
+            <li>Quality experience</li>
+            <li>Quick search</li>
+            <li>Symbols, footprints, and 3D models</li>
+            <li>Reduce part duplications</li>
+            <li>Drive scalability</li>
+            <li>Correct manufacturer part numbers</li>
+            <li>Datasheet access</li>
+            <li>Searchability through categorization</li>
+            <li>Redundancy elimination</li>
+            <li>Lifecycle status</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-box">
+      <h1>Design Analysis</h1>
+      <div class="box-row">
+        <div class="content-box">
+          <img src="../images/img4.png" alt="img4" class="images" />
+          <h3>Circuit Simulation</h3>
+          <ul>
+            <li>Circuit Simulation</li>
+            <li>
+              Thermal Analysis : Board Level Thermal Design, simulation and
+              analysis. Component Junction and case temperature computation.
+              Thermal profiles generation for components and PCB
+            </li>
+            <li>EMI analysis</li>
+            <li>Radiated Emissions Analysis.</li>
+            <li>System Level radiated emissions.</li>
+            <li>Reliability analysis</li>
+            <li>Failure mode, effects and criticality analysis</li>
+            <li>Failure rates and MTBF Analysis , Reliability prediction</li>
+          </ul>
+        </div>
+        <div class="content-box">
+          <img src="../images/img5.png" alt="img5" class="images" />
+          <h3>Thermal & EMI</h3>
+          <ul>
+            <li>
+              Pre-Layout Signal integrity analysis : Post Layout Signal
+              integrity analysis Placement optimization based on signal flow &
+              trace length requirement Reflection analysis & determination of
+              termination Generation of layout constraints & guidelines.
+            </li>
+            <li>Delay & Timing determination.</li>
+            <li>Crosstalk level estimation .</li>
+            <li>Eye diagram analysis.</li>
+            <li>
+              Modelling Power Plane structures to validate DC drop in power
+              supply rails due to copper losses.
+            </li>
+            <li>
+              Simulation of plane noise due to improper decoupling schemes.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="centered-box">
+        <div class="content-box">
+          <img src="../images/img6.png" alt="img6" class="images" />
+          <h3>Reliability</h3>
+          <ul>
+            <li>Design for Manufacturability and serviceability analysis.</li>
+            <li>
+              Design for Test (DFT) analysis as per specific test fixture
+              requirement.
+            </li>
+            <li>
+              Verification of input files for CAM compatibility and generating
+              reports on
+            </li>
+            <li>
+              Verification of Opens and Shorts, Matching of Drill data for
+              accuracy
+            </li>
+            <li>
+              Layer Analysis for annular ring, space & trace widths, Solder
+              Mask, fiduciary openings & exposed traces
+            </li>
+            <li>
+              Silk Screen removal, scoring, V-cuts, routing, slot, route and
+              retain, Test coupons
+            </li>
+            <li>
+              Gerber Translation/Reconstruction, Gerber-DXF, DXF editing &
+              conversion
+            </li>
+            <li>
+              Penalizations or board array configuration with maximum usages.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navLinks = document.querySelector(".nav-links");
+
+      mobileMenu.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

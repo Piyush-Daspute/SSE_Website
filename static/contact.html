@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Source Electronics</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/contact.css"/>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="navbar-placeholder"></div>
+    <script src="../js/load_navbar.js"></script>
+
+    <!-- Contact Section -->
+    <section class="pt-32 px-6 pb-16 max-w-7xl mx-auto text-white">
+      <h2 class="text-4xl font-bold mb-2">Contact Us</h2>
+      <p class="text-gray-400 mb-10">
+        We're here to help and answer any question you might have.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <!-- Form -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Send Us a Message</h3>
+          <form class="space-y-4">
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="w-full bg-black border border-gray-600 text-white rounded-md px-4 py-2"
+            />
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-full bg-black border border-gray-600 text-white rounded-md px-4 py-2"
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number (Optional)"
+              class="w-full bg-black border border-gray-600 text-white rounded-md px-4 py-2"
+            />
+            <textarea
+              rows="4"
+              placeholder="Your Message"
+              class="w-full bg-black border border-gray-600 text-white rounded-md px-4 py-2"
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded-md"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+          <ul class="space-y-4 text-sm text-gray-300">
+            <li class="flex gap-2">
+              <span class="material-icons text-blue-400">location_on</span>
+              <div>
+                <p class="font-medium text-white">Our Address</p>
+                <p>
+                  SINGLESOURCE ELECTRONICS,<br />
+                  ROW HOUSE NO-B3, EAST WEST CLASSIC SOCIETY,<br />
+                  PLOT NO.93, SECTOR-6, MOSHI. PUNE-412105
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-2">
+              <span class="material-icons text-blue-400">email</span>
+              <div>
+                <p class="font-medium text-white">Email Us</p>
+                <p>
+                  Rajendra:
+                  <a
+                    href="mailto:rajendra@singlesourcegroup.in"
+                    class="text-blue-400 hover:underline"
+                    >rajendra@singlesourcegroup.in</a
+                  >
+                </p>
+                <p>
+                  Atul:
+                  <a
+                    href="mailto:atul.chaudhari@singlesourcegroup.in"
+                    class="text-blue-400 hover:underline"
+                    >atul.chaudhari@singlesourcegroup.in</a
+                  >
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="mt-6">
+            <p class="font-medium mb-2 text-white">Our Location</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890.7871813917948!2d73.84514085812248!3d18.644923418979125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c71f45b3b8ef%3A0x4f570b1cf2a67d02!2sMoshi%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20412105!5e0!3m2!1sen!2sin!4v1687012345678!5m2!1sen!2sin"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      style="
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        background-color: #111;
+        border-top: 1px solid #444;
+        color: #aaa;
+      "
+    >
+      &copy; 2025 SingleSource Electronics. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Mobile Menu Script -->
+    <script>
+      const menu = document.getElementById("mobile-menu");
+      const links = document.getElementById("nav-links");
+
+      menu.addEventListener("click", () => {
+        links.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
+

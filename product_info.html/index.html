@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Model Page</title>
+  <link rel="stylesheet" href="style4.css"/>
+</head>
+<body>
+
+  <header>
+      <div class="logo">SingleSource Electronics</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products & Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+
+  <main>
+    <section class="image-info-wrapper">
+      <section class="Image-modelnumber">
+        <div class="zoom-container">
+            <img id="product-image" src="Assets/Load bank.png" alt="Load Bank">
+            <div id="zoom-result"></div>
+        </div>
+        <h1 class="model-number">MODEL NUMBER: AC-RLR-5KW</h1>
+      </section>
+
+      <div class="side-section">
+        <div class="side-buttons">
+          <button class="info-button" data-modal="modal1">Display and Indicators</button>
+          <button class="info-button" data-modal="modal2">Control and Safety</button>
+          <button class="info-button" data-modal="modal3">Connector Interface</button>
+        </div>
+
+        <div class="product-info">
+            <h2>Product Info</h2>
+            <table class="product-table">
+                <tbody>
+                <tr>
+                    <th>Max AC Input Voltage</th>
+                    <td>300V</td>
+                </tr>
+                <tr>
+                    <th>Max Current Capacity</th>
+                    <td>32Amp</td>
+                </tr>
+                <tr>
+                    <th>Resistance Values</th>
+                    <td>120ohm</td>
+                </tr>
+                <tr>
+                    <th>Tolerance</th>
+                    <td>5%</td>
+                </tr>
+                <tr>
+                    <th>Material</th>
+                    <td>MS</td>
+                </tr>
+                <tr>
+                    <th>Force Cooling</th>
+                    <td>High Cool FAN</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals -->
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Display and Indicators</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Sl. No.</th>
+            <th>Component</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Input Power Meter Display</td><td>Displays input power values</td></tr>
+          <tr><td>2</td><td>Output Power Meter Display</td><td>Displays output power values</td></tr>
+          <tr><td>3</td><td>Load Bank Temperature Meter Display</td><td>Shows the temperature of the load bank</td></tr>
+          <tr><td>4</td><td>3 No's External Temperature Meter Display</td><td>Displays temperatures from three external sensors</td></tr>
+          <tr><td>5</td><td>AC Main LED Indicator</td><td>Indicates AC main supply status</td></tr>
+          <tr><td>6</td><td>Load Selection LED Indicator</td><td>Shows selected load configuration</td></tr>
+          <tr><td>7</td><td>Thermal Shut Down LED Indicator</td><td>Lights up during overheat shutdown</td></tr>
+          <tr><td>8</td><td>Leakage Current Switch Selection LED Indicator</td><td>Indicates the selected leakage current switch</td></tr>
+          <tr><td>9</td><td>Leakage Current Display</td><td>Displays current leakage values</td></tr>
+          <tr><td>10</td><td>EVSE Power Input Power LED Indicator</td><td>Indicates EVSE input power status</td></tr>
+          <tr><td>11</td><td>EVSE Power Output Power LED Indicator</td><td>Indicates EVSE output power status</td></tr>
+          <tr><td>12</td><td>External Load Power Input LED Indicator</td><td>Indicates external load input power</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Control and Safety</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Sl. No.</th>
+            <th>Component</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>5 Position Power Section MCB</td><td>Provides overcurrent protection using 5-position main MCBs</td></tr>
+          <tr><td>2</td><td>Individual MCBs for Line, Neutral and Earth</td><td>Overcurrent protection for each power line (L, N, E)</td></tr>
+          <tr><td>3</td><td>Thermal Shut Down with Configurable Temperature</td><td>Protects system from overheating; shutdown threshold is adjustable</td></tr>
+          <tr><td>4</td><td>5 Position Leakage Current Section with Switches</td><td>Allows manual selection of leakage current settings</td></tr>
+          <tr><td>5</td><td>Emergency Stop Control Switch</td><td>Instantly halts operation for safety in emergencies</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Connector Interface</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Sl. No.</th>
+            <th>Component</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Type 2 AC Connector</td><td>Standard AC charging connector</td></tr>
+          <tr><td>2</td><td>Output Connector: IEC 62196-2 Type 2</td><td>Compliant with international EV charging standard</td></tr>
+          <tr><td>3</td><td>Input Plug: Type M, IS1293</td><td>Indian standard plug for input connection</td></tr>
+          <tr><td>4</td><td>2 No’s 16Amp AC Socket for External Loads</td><td>Two 16A sockets for powering external AC devices</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 SingleSource Electronics. All rights reserved.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+</body>
+</html>
